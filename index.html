@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição de Representante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Eleição de Representante</h1>
+    <div class="form-group">
+        <label for="num-eleitores">Número de Eleitores:</label>
+        <input type="number" id="num-eleitores" value="1" min="1">
+    </div>
+    <div id="candidatos-container"></div>
+    <div class="buttons-container">
+        <button class="voto-branco">Voto em Branco</button>
+        <button class="voto-nulo">Voto Nulo</button>
+        <button id="finalizar-votacao">Finalizar Votação</button>
+    </div>
+    <div id="resumo-container" style="display: none;">
+        <h2>Resumo da Votação</h2>
+        <p id="candidato-vencedor"></p>
+        <p id="percentuais-votos"></p>
+        <p id="percentuais-brancos-nulos"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
